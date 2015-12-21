@@ -1,0 +1,11 @@
+# Global variables for the site
+
+# Site settings
+title:       'Daniel Gomez-Sanchez'
+email:       'daniel.gomez.sanchez@hotmail.es'
+description: 'D. Gomez-Sanchez personal site'
+# TODO: change to 'http://magicdgs.github.io'
+url:         '/' # the base hostname & protocol for your site
+
+# Accounts
+github_username: 'magicdgs'
