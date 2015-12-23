@@ -13,9 +13,11 @@
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav navbar-left">
         {% for item in site.pages %}
+        {% if item.title != 404 %}
         <li>
           <a {% if item.url == page.url %}class="active"{% endif %} href="{% if item.permalink %}{{ item.permalink }}{% else %}{{ item.url }}{% endif %}">{{ item.title }}</a>
         </li>
+        {% endif %}
         {% endfor %}
       </ul>
     </div>
