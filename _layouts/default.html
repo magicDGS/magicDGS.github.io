@@ -6,7 +6,7 @@
 
 {% include head.html %}
 
-<body >
+<body>
   <!--[if lt IE 8]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
@@ -14,20 +14,10 @@
   {% include navbar.html %}
 
   {% include jumbotron.html %}
-  <div class="warning">
-  {% if page.permalink == "/404.html" %}
-    <h1>Page Not Found</h1>
-    <p>Sorry, but the page you were trying to view does not exist.</p>
-  {% else %}
-    <h1>Page under construction</h1>
-    <p>Sorry for the inconvenience.</p>
-  {% endif %}
 
   {{ content }}
-  </div>
 
-  {% include footer.html %}
-
+  <!-- TODO: include the footer -->
   {% include scripts.html %}
 
 </body>
